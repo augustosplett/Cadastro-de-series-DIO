@@ -55,6 +55,7 @@ namespace Teste
             var serie = repositorio.RetornaPorId(indiceSerie);
 
             Console.Write(serie);
+            Console.WriteLine();
         }
         private static void AtualizarSerie()
         {
@@ -99,7 +100,11 @@ namespace Teste
 
             foreach(var serie in lista)
             {
-                Console.WriteLine("#ID {0}: -{1}", serie.retornaID(), serie.retornaTitulo());
+                var excluido = serie.retornaExcluido();
+                if(!excluido)
+                {
+                    Console.WriteLine("#ID {0}: -{1}", serie.retornaID(), serie.retornaTitulo());
+                }
             }
         }
 
