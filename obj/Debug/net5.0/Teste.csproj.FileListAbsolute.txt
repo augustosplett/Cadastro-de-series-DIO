@@ -1,0 +1,5 @@
+/home/tinho/Desktop/dotnetProjects/Teste/obj/Debug/net5.0/Teste.csproj.AssemblyReference.cache
+/home/tinho/Desktop/dotnetProjects/Teste/obj/Debug/net5.0/Teste.GeneratedMSBuildEditorConfig.editorconfig
+/home/tinho/Desktop/dotnetProjects/Teste/obj/Debug/net5.0/Teste.AssemblyInfoInputs.cache
+/home/tinho/Desktop/dotnetProjects/Teste/obj/Debug/net5.0/Teste.AssemblyInfo.cs
+/home/tinho/Desktop/dotnetProjects/Teste/obj/Debug/net5.0/Teste.csproj.CoreCompileInputs.cache
