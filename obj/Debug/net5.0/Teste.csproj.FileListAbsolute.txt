@@ -3,3 +3,14 @@
 /home/tinho/Desktop/dotnetProjects/Teste/obj/Debug/net5.0/Teste.AssemblyInfoInputs.cache
 /home/tinho/Desktop/dotnetProjects/Teste/obj/Debug/net5.0/Teste.AssemblyInfo.cs
 /home/tinho/Desktop/dotnetProjects/Teste/obj/Debug/net5.0/Teste.csproj.CoreCompileInputs.cache
+/home/tinho/Desktop/dotnetProjects/Teste/bin/Debug/net5.0/Teste
+/home/tinho/Desktop/dotnetProjects/Teste/bin/Debug/net5.0/Teste.deps.json
+/home/tinho/Desktop/dotnetProjects/Teste/bin/Debug/net5.0/Teste.runtimeconfig.json
+/home/tinho/Desktop/dotnetProjects/Teste/bin/Debug/net5.0/Teste.runtimeconfig.dev.json
+/home/tinho/Desktop/dotnetProjects/Teste/bin/Debug/net5.0/Teste.dll
+/home/tinho/Desktop/dotnetProjects/Teste/bin/Debug/net5.0/ref/Teste.dll
+/home/tinho/Desktop/dotnetProjects/Teste/bin/Debug/net5.0/Teste.pdb
+/home/tinho/Desktop/dotnetProjects/Teste/obj/Debug/net5.0/Teste.dll
+/home/tinho/Desktop/dotnetProjects/Teste/obj/Debug/net5.0/ref/Teste.dll
+/home/tinho/Desktop/dotnetProjects/Teste/obj/Debug/net5.0/Teste.pdb
+/home/tinho/Desktop/dotnetProjects/Teste/obj/Debug/net5.0/Teste.genruntimeconfig.cache
