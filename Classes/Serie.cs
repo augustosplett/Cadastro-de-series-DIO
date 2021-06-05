@@ -15,6 +15,7 @@ namespace Teste
             this.Id = id;
             this.Genero = genero;
             this.Titulo = titulo;
+            this.Descricao = descricao;
             this.Ano = ano;
             this.Excluido = false;
         }

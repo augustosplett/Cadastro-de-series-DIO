@@ -67,24 +67,8 @@ namespace Teste
                 Console.WriteLine("{0}-{1}", i, Enum.GetName(typeof(Genero), i));
             }
 
-            Console.WriteLine("Digite o gênero entre as opções acima:");
-            int entradaGenero = int.Parse(Console.ReadLine());
-
-            Console.WriteLine("Digite o Título da Série:");
-            string entradaTitulo = Console.ReadLine();
-
-            Console.WriteLine("Digite o ano de início da série:");
-            int entradaAno = int.Parse(Console.ReadLine());
-
-            Console.WriteLine("Digite a descrição da série: ");
-            string entradaDescricao = Console.ReadLine();
+            ColetarDadosEGravar(indiceSerie, 2);
             
-            Serie atualizaSerie = new Serie(id: indiceSerie,
-                                         genero: (Genero)entradaGenero,
-                                         titulo: entradaTitulo,
-                                         ano:entradaAno,
-                                         descricao: entradaDescricao);
-            repositorio.Atualiza(indiceSerie, atualizaSerie);
         }
         private static void ListarSeries()
         {
@@ -116,6 +100,12 @@ namespace Teste
             {
                 Console.WriteLine("#ID {0}: -{1}", i, Enum.GetName(typeof(Genero), i));
             }
+            int identificador = repositorio.ProximoId();
+            ColetarDadosEGravar(identificador, 1);
+        }
+
+        private static void ColetarDadosEGravar(int id, int tipo)
+        {
             Console.WriteLine("Digite o gênero entre as opções acima:");
             int entradaGenero = int.Parse(Console.ReadLine());
 
@@ -127,14 +117,20 @@ namespace Teste
 
             Console.WriteLine("Digite a descrição da série: ");
             string entradaDescricao = Console.ReadLine();
-            
-            Serie novaSerie = new Serie(id: repositorio.ProximoId(),
-                                         genero: (Genero)entradaGenero,
-                                         titulo: entradaTitulo,
-                                         ano:entradaAno,
-                                         descricao: entradaDescricao);
 
-            repositorio.Insere(novaSerie);
+            Serie serie = new Serie(id: id,
+                                    genero: (Genero)entradaGenero,
+                                    titulo: entradaTitulo,
+                                    ano:entradaAno,
+                                    descricao: entradaDescricao);
+
+            if(tipo == 1)
+            {
+                repositorio.Insere(serie);
+            }else if(tipo == 2)
+            {
+                repositorio.Atualiza(id, serie);
+            }
         }
         private static string ObterOpcaoUsuario()
         {
